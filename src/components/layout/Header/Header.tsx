@@ -88,12 +88,12 @@ export function Header() {
           </div>
 
           {/* Main Navigation Bar */}
-          <div className="flex items-center justify-center gap-3 py-3 px-18">
+          <div className="flex items-center justify-center gap-3 py-3 px-2">
             {/* Logo */}
             <div className="flex items-center mr-2">
               <div className="text-3xl font-bold tracking-tight">
                 <a
-                  href=""
+                  href="/"
                   className="navbar__item button__home"
                 >
                   <div className="cps-navbar__logo logo__desktop">

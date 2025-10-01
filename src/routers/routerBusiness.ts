@@ -6,6 +6,10 @@ const routerBusiness = [
     source: routes.HOME,
     destination: "/",
   },
+  {
+    source: routes.NEWS,
+    destination: "/pages/techNews",
+  },
 ];
 
 export default routerBusiness;
