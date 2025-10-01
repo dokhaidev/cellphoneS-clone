@@ -3,6 +3,15 @@ import { RightSidebar } from "@/src/components/Homepage/right-sidebar"
 import { PromoBanner } from "@/src/components/Homepage/promo-banner"
 import { PromoBannerSlider } from "@/src/components/Homepage/product-tabs"
 import FeaturedPhones from "@/src/components/Homepage/featured-phones"
+import FeaturedLaptops from "../components/Homepage/featured-laptops"
+import FeaturedMonitorsPCs from "../components/Homepage/monitor-pc"
+import FeaturedTablets from "../components/Homepage/featured-tablets"
+import FeaturedAudio from "../components/Homepage/featured-audio"
+import FeaturedSmartWatch from "../components/Homepage/featured-smart-watch"
+import FeaturedHomeAppliances from "../components/Homepage/featured-home-appliances"
+import FeaturedTV from "../components/Homepage/featured-tv"
+import AccessoriesPage from "../components/Homepage/accessories"
+import FeaturedProducts from "../components/Homepage/featured-product-phone-tablet"
 
 export default function Home() {
   return (
@@ -25,9 +34,18 @@ export default function Home() {
         </aside>
       </div>
 
-      {/* Bottom Full-Width Promo Banner */}
+      {/* Featured Sections */}
       <PromoBanner />
-      <FeaturedPhones />
+      <FeaturedProducts />
+      {/* <FeaturedPhones /> */}
+      <FeaturedLaptops />
+      <FeaturedMonitorsPCs />
+      {/* <FeaturedTablets /> */}
+      <FeaturedAudio />
+      <FeaturedSmartWatch />
+      <FeaturedHomeAppliances />
+      <FeaturedTV />
+      <AccessoriesPage />
     </div>
   )
 }

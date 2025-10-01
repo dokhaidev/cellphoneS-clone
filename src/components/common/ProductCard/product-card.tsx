@@ -15,7 +15,7 @@ export const ProductCard = ({
   onFavoriteClick,
 }: ProductCardProps) => {
   return (
-    <Card className="group relative overflow-visible hover:shadow-lg transition-all duration-300 border border-gray-200 rounded-lg">
+    <Card className="group relative overflow-visible hover:shadow-lg transition-all duration-300 border border-gray-200 rounded-lg flex flex-col h-full">
       {/* Discount Badge - Using background image */}
       {product.discount && (
         <div className="absolute top-[-4] left-3 z-10 transform -translate-y-1 -translate-x-1">
@@ -50,9 +50,9 @@ export const ProductCard = ({
         </div>
       )}
 
-      <div className="p-2">
-        {/* Product Image */}
-        <div className="flex justify-center mb-3 h-40">
+      <div className="p-2 flex flex-col flex-1">
+        {/* Product Image - Fixed height */}
+        <div className="flex justify-center mb-3 h-35 flex-shrink-0">
           <img
             src={product.image}
             alt={product.name}
@@ -60,13 +60,15 @@ export const ProductCard = ({
           />
         </div>
 
-        {/* Product Name */}
-        <h3 className="text-sm font-semibold text-gray-900 mb-2 line-clamp-2 leading-tight">
-          {product.name}
-        </h3>
+        {/* Product Name - Fixed height */}
+        <div className="min-h-[40px] flex items-start">
+          <h3 className="text-sm font-semibold text-gray-900 line-clamp-2 leading-tight">
+            {product.name}
+          </h3>
+        </div>
 
-        {/* Price */}
-        <div className="mb-2">
+        {/* Price - Fixed height */}
+        <div className="min-h-[32px] flex items-center">
           <div className="flex items-baseline gap-2">
             <span className="text-base font-bold text-red-600">
               {product.price}
@@ -79,29 +81,29 @@ export const ProductCard = ({
           </div>
         </div>
 
-        {/* Promotional Badges */}
+        {/* Promotional Badges - Dynamic height */}
         <div className="space-y-1 mb-2">
           {product.smemberDiscount && (
-            <div className="bg-blue-50 text-blue-700 text-xs font-medium px-2 py-1 rounded border border-blue-100">
+            <div className="bg-[#DBE8FE] text-gray-700 text-[10px] font-medium px-2 py-1 rounded border border-blue-100">
               {product.smemberDiscount}
             </div>
           )}
           {product.studentDiscount && (
-            <div className="bg-blue-50 text-blue-700 text-xs font-medium px-2 py-1 rounded border border-blue-100">
+            <div className="bg-[#DBE8FE] text-gray-700 text-[10px] font-medium px-2 py-1 rounded border border-blue-100">
               {product.studentDiscount}
             </div>
           )}
         </div>
 
-        {/* Promo Text - Fixed overflow */}
-        <div className="mb-2">
-          <p className="text-xs font-medium text-gray-600 line-clamp-3 leading-tight bg-gray-100 px-2 py-1.5 rounded">
+        {/* Promo Text - Fixed height */}
+        <div className="min-h-[55px] flex items-start">
+          <p className="text-[11px] font-medium text-gray-600 leading-tight bg-gray-100 px-2 py-1.5 rounded w-full line-clamp-2">
             {product.promoText}
           </p>
         </div>
 
-        {/* Footer - Rating & Favorite */}
-        <div className="flex items-center justify-between pt-2 border-t border-gray-100">
+        {/* Footer - Rating & Favorite - Fixed at bottom */}
+        <div className="flex items-center justify-between mt-auto">
           <div className="flex items-center gap-1">
             <Star className="w-4 h-4 fill-yellow-400 text-yellow-400" />
             <span className="text-sm font-bold text-gray-900">

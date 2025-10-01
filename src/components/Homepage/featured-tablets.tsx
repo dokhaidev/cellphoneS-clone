@@ -3,7 +3,7 @@
 import { useState } from "react";
 import { ProductCard } from "@/src/components/common/ProductCard/product-card";
 import { BrandTabs } from "@/src/components/common/BrandTab/brand-tab";
-import { brands, sampleProducts } from "@/src/data/sampleProducts";
+import { tabletBrands, sampleTablets } from "@/src/data/sampleTablets";
 import { Product } from "@/src/types/product";
 import Image from "next/image";
 import { ChevronLeft, ChevronRight } from "lucide-react";
@@ -28,8 +28,8 @@ export default function FeaturedPhones() {
   // Filter products based on selected brand
   const filteredProducts: Product[] =
     selectedBrand === "Xem tất cả"
-      ? sampleProducts
-      : sampleProducts.filter((product) => product.brand === selectedBrand);
+      ? sampleTablets
+      : sampleTablets.filter((product) => product.brand === selectedBrand);
 
   // Navigation functions
   const nextSlide = () => {
@@ -56,12 +56,12 @@ export default function FeaturedPhones() {
       <div className="max-w-[1250px] mx-auto px-4">
         <div className="mb-6 flex items-center flex-row-reverse sm:flex-row justify-between">
           <h1 className="text-2xl font-bold text-gray-700">
-            ĐIỆN THOẠI NỔI BẬT NHẤT
+            MÁY TÍNH BẢNG
           </h1>
           
           {/* Brand Tabs Component */}
           <BrandTabs
-            brands={brands}
+            brands={tabletBrands}
             selectedBrand={selectedBrand}
             onBrandSelect={(brand) => {
               setSelectedBrand(brand);  
@@ -105,7 +105,7 @@ export default function FeaturedPhones() {
                 {canGoPrev && (
                   <button
                     onClick={prevSlide}
-                    className="absolute left-0 top-[52%] -translate-y-1/2 -translate-x-4 z-1000 bg-white rounded-full shadow-lg p-2 hover:bg-gray-50 transition-colors border border-gray-200"
+                    className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-4 z-1000 bg-white rounded-full shadow-lg p-2 hover:bg-gray-50 transition-colors border border-gray-200"
                     aria-label="Previous products"
                   >
                     <ChevronLeft className="w-5 h-5 text-gray-600" />
@@ -115,7 +115,7 @@ export default function FeaturedPhones() {
                 {canGoNext && (
                   <button
                     onClick={nextSlide}
-                    className="absolute right-0 top-[52%] -translate-y-1/2 translate-x-4 z-1000 bg-white rounded-full shadow-lg p-2 hover:bg-gray-50 transition-colors border border-gray-200"
+                    className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-4 z-1000 bg-white rounded-full shadow-lg p-2 hover:bg-gray-50 transition-colors border border-gray-200"
                     aria-label="Next products"
                   >
                     <ChevronRight className="w-5 h-5 text-gray-600" />

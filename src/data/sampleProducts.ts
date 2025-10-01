@@ -25,7 +25,7 @@ export const sampleProducts: Product[] = [
     smemberDiscount: "Smember giảm đến 320.000đ",
     studentDiscount: null,
     promoText:
-      "Không phí chuyển đổi khi trả góp 0% qua thẻ tín dụng kỳ hạn 3-6 tháng",
+      "Không phí chuyển đổi khi trả góp 0% qua thẻ tín dụng từ 3-6 tháng",
     rating: 4.9,
     image:
       "https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/i/p/iphone_air-3_2.jpg",
@@ -39,9 +39,9 @@ export const sampleProducts: Product[] = [
     discount: "Giảm 13%",
     installment: "Trả góp 0%",
     smemberDiscount: "Smember giảm đến 303.000đ",
-    studentDiscount: null,
+    studentDiscount: "S-Student giảm thêm 300.000đ",
     promoText:
-      "Không phí chuyển đổi khi trả góp 0% qua thẻ tín dụng kỳ hạn 3-6 tháng",
+      "Không phí chuyển đổi khi trả góp 0% qua thẻ tín dụng từ 3-6 tháng",
     rating: 4.9,
     image:
       "https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/i/p/iphone-16-pro-max.png",
@@ -57,7 +57,7 @@ export const sampleProducts: Product[] = [
     smemberDiscount: "Smember giảm đến 380.000đ",
     studentDiscount: null,
     promoText:
-      "Không phí chuyển đổi khi trả góp 0% qua thẻ tín dụng kỳ hạn 3-6 tháng",
+      "Không phí chuyển đổi khi trả góp 0% qua thẻ tín dụng từ 3-6 tháng",
     rating: 5,
     image:
       "https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/i/p/iphone-17-pro-max_3.jpg",
@@ -73,7 +73,7 @@ export const sampleProducts: Product[] = [
     smemberDiscount: "Smember giảm đến 150.000đ",
     studentDiscount: "S-Student giảm thêm 300.000đ",
     promoText:
-      "Không phí chuyển đổi khi trả góp 0% qua thẻ tín dụng kỳ hạn 3-6 tháng",
+      "Không phí chuyển đổi khi trả góp 0% qua thẻ tín dụng từ 3-6 tháng",
     rating: 5,
     image:
       "https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/x/i/xiaomi-15t-5g-22.jpg",
@@ -89,7 +89,7 @@ export const sampleProducts: Product[] = [
     smemberDiscount: "Smember giảm đến 152.000đ",
     studentDiscount: null,
     promoText:
-      "Không phí chuyển đổi khi trả góp 0% qua thẻ tín dụng kỳ hạn 3-6 tháng",
+      "Không phí chuyển đổi khi trả góp 0% qua thẻ tín dụng từ 3-6 tháng",
     rating: 4.9,
     image:
       "https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/i/p/iphone-15-plus_1__1.png",
@@ -105,7 +105,7 @@ export const sampleProducts: Product[] = [
     smemberDiscount: "Smember giảm đến 280.000đ",
     studentDiscount: null,
     promoText:
-      "Không phí chuyển đổi khi trả góp 0% qua thẻ tín dụng kỳ hạn 3-6 tháng",
+      "Không phí chuyển đổi khi trả góp 0% qua thẻ tín dụng từ 3-6 tháng",
     rating: 4.9,
     image:
       "https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/f/r/frame_166_3.png",
@@ -121,7 +121,7 @@ export const sampleProducts: Product[] = [
     smemberDiscount: "Smember giảm đến 103.000đ",
     studentDiscount: null,
     promoText:
-      "Không phí chuyển đổi khi trả góp 0% qua thẻ tín dụng kỳ hạn 3-6 tháng",
+      "Không phí chuyển đổi khi trả góp 0% qua thẻ tín dụng từ 3-6 tháng",
     rating: 5,
     image:
       "https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/o/p/oppo-reno14-f-w.jpg",
@@ -137,7 +137,7 @@ export const sampleProducts: Product[] = [
     smemberDiscount: "Smember giảm đến 85.000đ",
     studentDiscount: null,
     promoText:
-      "Không phí chuyển đổi khi trả góp 0% qua thẻ tín dụng kỳ hạn 3-6 tháng",
+      "Không phí chuyển đổi khi trả góp 0% qua thẻ tín dụng từ 3-6 tháng",
     rating: 5,
     image:
       "https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/d/i/dien-thoai-nubia-neo-3-gt-12gb-256gb.1.png",
@@ -153,7 +153,7 @@ export const sampleProducts: Product[] = [
     smemberDiscount: "Smember giảm đến 104.000đ",
     studentDiscount: null,
     promoText:
-      "Không phí chuyển đổi khi trả góp 0% qua thẻ tín dụng kỳ hạn 3-6 tháng",
+      "Không phí chuyển đổi khi trả góp 0% qua thẻ tín dụng từ 3-6 tháng",
     rating: 4.9,
     image:
       "https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/x/i/xiaomi-15t-pro-5g_1.jpg",
@@ -169,7 +169,7 @@ export const sampleProducts: Product[] = [
     smemberDiscount: "Smember giảm đến 164.000đ",
     studentDiscount: null,
     promoText:
-      "Không phí chuyển đổi khi trả góp 0% qua thẻ tín dụng kỳ hạn 3-6 tháng",
+      "Không phí chuyển đổi khi trả góp 0% qua thẻ tín dụng từ 3-6 tháng",
     rating: 4.9,
     image:
       "https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/s/a/samsung-galaxy-s24-plus.png",
