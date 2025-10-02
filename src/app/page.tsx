@@ -2,16 +2,12 @@ import { LeftSidebar } from "@/src/components/Homepage/left-sidebar"
 import { RightSidebar } from "@/src/components/Homepage/right-sidebar"
 import { PromoBanner } from "@/src/components/Homepage/promo-banner"
 import { PromoBannerSlider } from "@/src/components/Homepage/product-tabs"
-import FeaturedPhones from "@/src/components/Homepage/featured-phones"
-import FeaturedLaptops from "../components/Homepage/featured-laptops"
-import FeaturedMonitorsPCs from "../components/Homepage/monitor-pc"
-import FeaturedTablets from "../components/Homepage/featured-tablets"
-import FeaturedAudio from "../components/Homepage/featured-audio"
-import FeaturedSmartWatch from "../components/Homepage/featured-smart-watch"
 import FeaturedHomeAppliances from "../components/Homepage/featured-home-appliances"
 import FeaturedTV from "../components/Homepage/featured-tv"
 import AccessoriesPage from "../components/Homepage/accessories"
-import FeaturedProducts from "../components/Homepage/featured-product-phone-tablet"
+import FeaturedProductsPhoneTablet from "../components/Homepage/featured-product-phone-tablet"
+import FeaturedProductsLaptopMonitor from "../components/Homepage/featured-product-laptop-monitor"
+import FeaturedProductsAudioWatch from "../components/Homepage/featured-product-audio-watch"
 
 export default function Home() {
   return (
@@ -36,13 +32,9 @@ export default function Home() {
 
       {/* Featured Sections */}
       <PromoBanner />
-      <FeaturedProducts />
-      {/* <FeaturedPhones /> */}
-      <FeaturedLaptops />
-      <FeaturedMonitorsPCs />
-      {/* <FeaturedTablets /> */}
-      <FeaturedAudio />
-      <FeaturedSmartWatch />
+      <FeaturedProductsPhoneTablet />
+      <FeaturedProductsLaptopMonitor />
+      <FeaturedProductsAudioWatch />
       <FeaturedHomeAppliances />
       <FeaturedTV />
       <AccessoriesPage />

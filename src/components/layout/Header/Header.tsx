@@ -38,7 +38,7 @@ export function Header() {
         }
       `}</style>
 
-      <header className="w-full bg-gradient-to-b from-[#E13F52] to-[#D90E26] text-white">
+      <header className="w-full bg-gradient-to-b from-[#E13F52] to-[#D90E26] text-white sticky top-0 z-50 shadow-md">
         <div className="container mx-auto px-4">
           {/* Top Bar with Scrolling Marquee */}
           <div className="flex items-center justify-between py-2 text-sm">

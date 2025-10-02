@@ -8,7 +8,19 @@ const routerBusiness = [
   },
   {
     source: routes.NEWS,
-    destination: "/pages/techNews",
+    destination: "/techNews",
+  },
+  {
+    source: routes.ABOUT_US,
+    destination: "/aboutUs",
+  },
+  {
+    source: routes.CONTACT,
+    destination: "/contact",
+  },
+  {
+    source: routes.PRIVACY_POLICY,
+    destination: "/privacyPolicy",
   },
 ];
 
